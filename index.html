@@ -14,25 +14,39 @@
             <h1 class="formulario__titulo">Producto</h1>
             <input type="text" class="formulario__input" id="name">
             <label for="" class="formulario__label">Nombre</label>
-            <input type="text" class="formulario__input" id="weight">
-            <label for="" class="formulario__label">Peso</label>
-            <input type="text" class="formulario__input" id="brand">
-            <label for="" class="formulario__label">Marca</label>
+            <input type="text" class="formulario__input" id="price">
+            <label for="" class="formulario__label">Precio</label>
+            <input type="text" class="formulario__input" id="howmuch">
+            <label for="" class="formulario__label">Cantidad</label>
         </form>
         
         <aside class="tabla">
-            <input type="submit" class="formulario__submit" onclick="enviar()">
+            <section id="boton_enviar">
+                <input type="submit" class="formulario__submit" onclick="enviar()">
+            </section>
             <table>
                 <thead>
                     <th>N°</th>
                     <th>Nombre</th>
-                    <th>Peso</th>
-                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th>Operacion</th>
                 </thead>
                 <tbody>
                     
                 </tbody>
             </table>
+            <section>
+                <label for="" class="footer__answer">Total Sub: </label>
+                <input type="text" class="answer" id="total_sub">
+                <br>
+                <label for="" class="footer__answer">IGV: </label>
+                <input type="text" class="answer" id="igv">
+                <br>
+                <label for="" class="footer__answer">Total: </label>
+                <input type="text" class="answer" id="total">
+            </section>
         </aside>
     </main>
     <footer></footer>
